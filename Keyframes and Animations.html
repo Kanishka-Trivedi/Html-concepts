@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+                   background-color: greenyellow;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: relative;
+            color: darkblue;
+            font-size: 26px;
+            /* animation-name: kanishka1;
+            animation-duration: 2s;
+            animation-iteration-count: 1; */
+            /* animation-fill-mode:forwards; */
+            /* animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out; */
+            animation-name: kanishka2;
+            animation-duration: 8s;
+            animation-iteration-count: 2;
+        }
+
+        /* @keyframes kanishka1{
+                  from{
+                       width: 200px;
+                  }
+
+                  to{
+                     width: 1400px;
+                  }
+        } */
+ 
+
+        @keyframes kanishka2{
+            0%{
+                top:0px ;
+                left:0px ;
+            }
+
+            25%{
+                top:200px ;
+                left:0px ;
+            }
+
+            75%{
+                top:200px ;
+                left:200px ;
+            }
+
+            100%{
+                top:0px ;
+                left:200px ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box.
+        </div>
+    </div>
+    
+</body>
+</html>

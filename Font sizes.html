@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit sizes</title>
+    <style>
+        html{
+             font-size: 25px;
+        }
+
+        /* n em means n times the parent relative size. */
+        h1{
+            text-align: center;
+        }
+
+        .container{
+                   
+                   /* height: 344px; */
+                   /* To get the box of the same height of the page we use 100vh. */
+                   height: 100vh;
+                   /* vh is same as percentage, 100vh means full heightand 50vh means half height. */
+                   font-size: 10px;
+                   border: 3px solid blue;
+        }
+
+        #first{
+               /* font-size: 3em;
+               padding: 3em; */
+        }
+
+        /* N rem is n times the size os the relative html size. */
+
+        #second{
+                font-size: 3rem;
+                padding: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading.</h1>
+        <h1 id="second">This is second heading.</h1>
+        <h1 id="third">This is third heading.</h1>
+    </div>
+    
+</body>
+</html>

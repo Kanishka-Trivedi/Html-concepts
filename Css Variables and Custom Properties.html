@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables and Custom Properties</title>
+    <style>
+         /* :root{} is a universal style tag i.e.the commands in this tag are applicabe to all other tags. */
+        :root{
+              --primary-color:blueviolet;
+              --secondary-color:rgb(36, 36, 79);
+              --maxw:300px;
+        }
+
+        .container{
+                   max-width: var(--maxw);
+                   margin: auto;
+                   background-color: aquamarine;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+        }
+
+        .box{
+            /* To create a variable we apply -- before any content to make it a variable. */
+            /* --box-color: blueviolet;
+             background-color: var(--box-color)  */
+            background-color: var(--primary-color);
+            box-shadow:5px 5px var(--secondary-color);
+
+            border: 2px solid black;
+            margin: 2px 9px;
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box"></div>  
+      <div class="box"></div>  
+      <div class="box"></div>  
+    </div>
+    
+</body>
+</html>

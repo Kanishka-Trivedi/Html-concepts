@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling links and buttons</title>
+    <style>
+.container{
+           border: 3px solid red;
+           background-color: black;
+           color: aqua;
+           padding: 34px;
+           margin: 34px auto;
+           width: 666px;
+}
+/* This is for when you click on a link   */
+a:hover{
+        background-color: brown;
+}
+
+/* This is for when the site or link is active  */
+a:active{
+         background-color: blue;
+}
+/* This is for when the link is already visited  */
+a:visited{
+          background-color:yellow ;
+}
+.btn{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+     color: aqua;
+     background-color: blueviolet;
+     padding: 6px;
+     cursor: pointer;
+     font-size: 13px;
+     border-radius: 4px;
+}
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, est. Delectus sunt molestias ducimus quisquam repellendus quas beatae illum quibusdam fugiat. Corrupti ipsum accusantium iure minima commodi culpa perferendis facere sequi cumque, distinctio illum beatae.</p>
+        <a href="https://google.com" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+    
+</body>
+</html>

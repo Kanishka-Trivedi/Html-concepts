@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Tutorial</title>
+    <style>
+        .item{
+              border: 3px solid green;
+              background-color: aquamarine;
+              border-radius: 3px;
+              margin: 14px;
+              padding: 4px;
+              flex-direction: column;
+              width: 150px;
+              height: 150px;
+              
+        }
+
+        .container{
+                   border: 2px solid brown;
+                   padding: 3px;
+                   margin: 10px;
+                   display: flex;
+                   width:100%;
+                   height: 544px;
+                   /* default value of flex direction is row */
+                  /* flex-direction: row;
+                  flex-direction: column;
+                  flex-direction: column-reverse;
+                  flex-direction: row-reverse; */
+
+                  flex-wrap: wrap;
+                  /* Default value of flex-wrap is nowrap. */
+                  /* flex-wrap: wrap-reverse; */
+        }
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h3>This is a FlexBox Tutorial.</h3>
+    <div class="container">
+        <div class="item" id="item1">You are special.</div>
+        <div class="item" id="item2">You are brave.</div>
+        <div class="item" id="item3">You are strong.</div>
+        <div class="item" id="item4">You can do it.</div>
+    </div>
+    
+</body>
+</html>

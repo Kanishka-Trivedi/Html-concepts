@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html Forms</title>
+  <style>
+    .redBorder{
+                color: aliceblue;
+                background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h2>APPLICATION FORM</h2>
+  <form action="backend.php"></form>
+  <div>
+  Name:<input type="text" name="myName" >
+  </div><br>
+
+  <div>
+  Your contact number:<input type="number" name="myNumber" >
+  </div><br>
+
+  <div>
+   Your Role:<input type="text" name="myRole" >
+  </div><br>
+
+  <div>
+  Your email:<input type="email" name="myEmail">
+  </div><br>
+
+  <div>
+  Are you eligible?<input type="checkbox" name="myEligibility" >
+  </div><br>
+
+  <div>
+  Date:<input type="date" name="myDate" >
+  </div><br>
+
+  <div>
+  Gender:Female<input type="radio" name="myGender" > Male  <input type="radio" name="myGender" > Other <input type="radio" name="myGender" >
+  </div><br>
+
+  <div>
+   Bonus:<input type="number" name="myBonus" >
+  </div><br>
+
+  <div>
+  Why should we hire you?<br><textarea name="myText"  cols="30" rows="10"></textarea>
+  </div><br>
+
+  <div>
+  <label for="Car">Select a car for you:</label>
+   <select name="car"  >Car</select>
+  <div><option value="ferrari">Ferrari</option></div>
+  <div><option value="Porche">Porche</option></div>
+  <div><option value="Mesrati">Mesrati</option></div>
+  </div><br>
+
+  <div>
+    <input type="submit" value="Submit Now" class="redBorder">
+    <br>
+    <input type="reset" value="Reset Now" class="redBorder" >
+  </div>
+</body>
+</html>
